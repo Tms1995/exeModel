@@ -48,10 +48,15 @@ You need code your model like this
 public class User  extends ExecutableModel{
 
    public static Dao<User> dao = new Dao(User.class);//to make model executable
+   
     private int id;
+    
     private String name;
+    
     private int age;
+    
     private String details;
+    
 
     @Id
     public int getId() {
