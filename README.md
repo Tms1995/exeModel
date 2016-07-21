@@ -44,7 +44,9 @@ or update some columns with conditions
  
 You need code your model like this
 @Table(name = "user")
+
 public class User  extends ExecutableModel{
+
    public static Dao<User> dao = new Dao(User.class);//to make model executable
     private int id;
     private String name;
